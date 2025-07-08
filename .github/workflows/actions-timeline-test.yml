@@ -4,11 +4,11 @@ on:
   push:
 
 jobs:
-  #actions-timeline:
-  #  runs-on: ubuntu-latest
+  actions-timeline:
+    runs-on: ubuntu-latest
     #needs: [test-job1, test-job2]
-  #  steps:
-  #    - uses: Kesin11/actions-timeline@v2
+    steps:
+      - uses: Kesin11/actions-timeline@v2
 
   test-job1:
     runs-on: ubuntu-latest
@@ -48,9 +48,9 @@ jobs:
           sleep 3
           echo "Job 1 completed successfully."
 
-  actions-timeline:
-    runs-on: ubuntu-latest
+  #actions-timeline:
+  #  runs-on: ubuntu-latest
   #  needs: [test-job1, test-job2]
-    needs: test-job2
-    steps:
-      - uses: Kesin11/actions-timeline@v2
+  #  needs: test-job2
+  #  steps:
+  #    - uses: Kesin11/actions-timeline@v2
