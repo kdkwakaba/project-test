@@ -26,3 +26,17 @@ jobs:
             echo "Iteration $i"
             sleep 1
           done
+
+  test-job1:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Run Job 1 Command
+        run: |
+          echo "This is Job 1 command."
+          sleep 3
+          echo "Job 1 completed successfully."
+          
